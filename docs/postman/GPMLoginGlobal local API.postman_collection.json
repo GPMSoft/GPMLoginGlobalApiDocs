@@ -1,0 +1,1426 @@
+{
+  "info": {
+    "_postman_id": "e0d93cac-9a93-4f38-8612-9358bdd7006e",
+    "name": "GPMLoginGlobal local API",
+    "description": "Connect to GPMLogin Global without going through the interface",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "11184161"
+  },
+  "item": [
+    {
+      "name": "V1",
+      "item": [
+        {
+          "name": "Groups",
+          "item": [
+            {
+              "name": "Find all",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/groups",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "groups"
+                  ]
+                },
+                "description": "Get all groups"
+              },
+              "response": [
+                {
+                  "name": "Find all",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/groups",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "groups"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "459"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:03:24 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"current_page\":1,\"per_page\":30,\"total\":2,\"last_page\":1,\"data\":[{\"id\":\"4fd6db25-12cc-4ba2-b943-b7583db807fc\",\"name\":\"test 1\",\"order\":2,\"created_at\":\"2025-09-08T10:18:19.5808258\",\"updated_at\":\"2025-09-08T10:18:19.580826\"},{\"id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"name\":\"Default group\",\"order\":0,\"created_at\":\"2025-09-04T08:20:39.7115442\",\"updated_at\":\"2025-09-04T08:20:39.7115442\"}]},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Find one",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/groups/67db46f9-df8c-41c5-a18f-631a090a17a1",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "groups",
+                    "67db46f9-df8c-41c5-a18f-631a090a17a1"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Find one",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/groups/67db46f9-df8c-41c5-a18f-631a090a17a1",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "groups",
+                        "67db46f9-df8c-41c5-a18f-631a090a17a1"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "236"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:03:53 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"name\":\"Default group\",\"order\":0,\"created_at\":\"2025-09-04T08:20:39.7115442\",\"updated_at\":\"2025-09-04T08:20:39.7115442\"},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Group created from api\",\r\n    \"order\": 999\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/groups/create",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "groups",
+                    "create"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Create",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"Group created from api\",\r\n    \"order\": 999\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/groups/create",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "groups",
+                        "create"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "257"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:04:30 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"926ecb7b-7f5d-4191-9568-0fe1524b18f4\",\"name\":\"Group created from api\",\"order\":999,\"created_at\":\"2025-09-08T15:04:30.6740464Z\",\"updated_at\":\"2025-09-08T15:04:30.6740465Z\"},\"message\":\"GroupAdded\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"name\": \"Group edited by api\", \"order\": 999}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/groups/update/926ecb7b-7f5d-4191-9568-0fe1524b18f4",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "groups",
+                    "update",
+                    "926ecb7b-7f5d-4191-9568-0fe1524b18f4"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Update",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\"name\": \"Group edited by api\", \"order\": 999}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/groups/update/926ecb7b-7f5d-4191-9568-0fe1524b18f4",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "groups",
+                        "update",
+                        "926ecb7b-7f5d-4191-9568-0fe1524b18f4"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "244"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:05:43 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"926ecb7b-7f5d-4191-9568-0fe1524b18f4\",\"name\":\"Group edited by api\",\"order\":999,\"created_at\":\"2025-09-08T15:04:30.6740464\",\"updated_at\":\"2025-09-08T15:04:30.6740465\"},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Delete",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/groups/delete/926ecb7b-7f5d-4191-9568-0fe1524b18f4",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "groups",
+                    "delete",
+                    "926ecb7b-7f5d-4191-9568-0fe1524b18f4"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Delete",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/groups/delete/926ecb7b-7f5d-4191-9568-0fe1524b18f4",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "groups",
+                        "delete",
+                        "926ecb7b-7f5d-4191-9568-0fe1524b18f4"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "87"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:05:59 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":null,\"message\":\"GROUP_DELETED\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Proxies",
+          "item": [
+            {
+              "name": "Find all",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/proxies?page=1&page_size=10&search=&sort=1",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "proxies"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "page_size",
+                      "value": "10"
+                    },
+                    {
+                      "key": "search",
+                      "value": ""
+                    },
+                    {
+                      "key": "sort",
+                      "value": "1",
+                      "description": "0 - created desc, 1 - created asc, 2 - name asc, 3 - name desc"
+                    }
+                  ]
+                },
+                "description": "Get all proxies"
+              },
+              "response": [
+                {
+                  "name": "Find all",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/proxies?page=1&page_size=10&search=&sort=1",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proxies"
+                      ],
+                      "query": [
+                        {
+                          "key": "page",
+                          "value": "1"
+                        },
+                        {
+                          "key": "page_size",
+                          "value": "10"
+                        },
+                        {
+                          "key": "search",
+                          "value": ""
+                        },
+                        {
+                          "key": "sort",
+                          "value": "1",
+                          "description": "0 - created desc, 1 - created asc, 2 - name asc, 3 - name desc"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "2950"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:10:51 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"current_page\":1,\"per_page\":10,\"total\":10,\"last_page\":1,\"data\":[{\"id\":\"a36a1e31-bdae-4566-95df-f246996a141c\",\"raw_proxy\":\"14.244.137.125:24009:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:29.9649830Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361423\",\"updated_at\":\"2025-09-08T08:55:22.0361424\",\"tags\":[{\"id\":\"2c66f5c5-dade-4cf2-9df0-a79a7f02466a\",\"name\":\"live\",\"color\":\"Green\",\"category\":\"proxy\"}]},{\"id\":\"ded2dd67-ca22-43e1-bb03-181a7312b994\",\"raw_proxy\":\"14.244.137.125:24008:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:30.6639044Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361405\",\"updated_at\":\"2025-09-08T08:55:22.0361405\",\"tags\":[{\"id\":\"2c66f5c5-dade-4cf2-9df0-a79a7f02466a\",\"name\":\"live\",\"color\":\"Green\",\"category\":\"proxy\"}]},{\"id\":\"a8e1d89c-416a-4686-bde8-67ee636e63fa\",\"raw_proxy\":\"14.244.137.125:24007:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:31.0752360Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.03614\",\"updated_at\":\"2025-09-08T08:55:22.03614\",\"tags\":[]},{\"id\":\"d69e3b9d-2e0d-46b5-a727-67ae60d06f42\",\"raw_proxy\":\"14.244.137.125:24006:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:32.8930707Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361395\",\"updated_at\":\"2025-09-08T08:55:22.0361395\",\"tags\":[]},{\"id\":\"79dc75f5-db9a-441e-8309-f9916daf31e6\",\"raw_proxy\":\"14.244.137.125:24005:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:33.3622178Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.036139\",\"updated_at\":\"2025-09-08T08:55:22.036139\",\"tags\":[]},{\"id\":\"106308fc-a7f6-4c9f-b144-b1c3691960b0\",\"raw_proxy\":\"14.244.137.125:24004:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:35.0809559Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361379\",\"updated_at\":\"2025-09-08T08:55:22.0361379\",\"tags\":[]},{\"id\":\"49a0b26e-4cbd-4b16-83d9-0c9737c8e5fa\",\"raw_proxy\":\"14.244.137.125:24003:1:1\",\"meta_data\":\"{\\\"is_alive\\\":false,\\\"last_check\\\":\\\"2025-09-08T08:55:37.2470158Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361374\",\"updated_at\":\"2025-09-08T08:55:22.0361374\",\"tags\":[]},{\"id\":\"80f0ef0b-2f6f-4659-9c5b-05150d2f5a00\",\"raw_proxy\":\"14.244.137.125:24002:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:37.7015936Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361368\",\"updated_at\":\"2025-09-08T08:55:22.0361369\",\"tags\":[]},{\"id\":\"3de38d26-9b03-43ce-b56d-0ea85b7fb05b\",\"raw_proxy\":\"14.244.137.125:24001:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:38.1645337Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361361\",\"updated_at\":\"2025-09-08T08:55:22.0361362\",\"tags\":[]},{\"id\":\"e717b6ec-0e18-49f2-93eb-b50bb364dad0\",\"raw_proxy\":\"14.244.137.125:24000:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:38.6035822Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0360655\",\"updated_at\":\"2025-09-08T08:55:22.036066\",\"tags\":[]}]},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Find one",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/proxies/a36a1e31-bdae-4566-95df-f246996a141c",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "proxies",
+                    "a36a1e31-bdae-4566-95df-f246996a141c"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Find one",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/proxies/a36a1e31-bdae-4566-95df-f246996a141c",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proxies",
+                        "a36a1e31-bdae-4566-95df-f246996a141c"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "334"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:11:33 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"a36a1e31-bdae-4566-95df-f246996a141c\",\"raw_proxy\":\"14.244.137.125:24009:1:1\",\"meta_data\":\"{\\\"is_alive\\\":true,\\\"last_check\\\":\\\"2025-09-08T08:55:29.9649830Z\\\"}\",\"created_at\":\"2025-09-08T08:55:22.0361423\",\"updated_at\":\"2025-09-08T08:55:22.0361424\",\"tags\":[]},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/proxies/create",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "proxies",
+                    "create"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Create",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/proxies/create",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proxies",
+                        "create"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "278"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:11:50 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"20c90b14-7b53-4e13-a302-8f2ce31bbeed\",\"raw_proxy\":\"socks5://127.0.0.1:5001\",\"meta_data\":null,\"created_at\":\"2025-09-08T15:11:50.1867076Z\",\"updated_at\":\"2025-09-08T15:11:50.1867081Z\",\"tags\":[]},\"message\":\"ProxyAdded\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/proxies/update/20c90b14-7b53-4e13-a302-8f2ce31bbeed",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "proxies",
+                    "update",
+                    "20c90b14-7b53-4e13-a302-8f2ce31bbeed"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Update",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/proxies/update/20c90b14-7b53-4e13-a302-8f2ce31bbeed",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proxies",
+                        "update",
+                        "20c90b14-7b53-4e13-a302-8f2ce31bbeed"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "268"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:12:08 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"20c90b14-7b53-4e13-a302-8f2ce31bbeed\",\"raw_proxy\":\"socks5://127.0.0.1:5001\",\"meta_data\":null,\"created_at\":\"2025-09-08T15:11:50.1867076\",\"updated_at\":\"2025-09-08T15:11:50.1867081\",\"tags\":[]},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Delete",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/proxies/delete/20c90b14-7b53-4e13-a302-8f2ce31bbeed",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "proxies",
+                    "delete",
+                    "20c90b14-7b53-4e13-a302-8f2ce31bbeed"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Delete",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/proxies/delete/20c90b14-7b53-4e13-a302-8f2ce31bbeed",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "proxies",
+                        "delete",
+                        "20c90b14-7b53-4e13-a302-8f2ce31bbeed"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "86"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:12:28 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":null,\"message\":\"ProxyDeleted\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Profiles",
+          "item": [
+            {
+              "name": "Find all",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles?page=1&per_page=30&search=&sort=0",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "30"
+                    },
+                    {
+                      "key": "search",
+                      "value": ""
+                    },
+                    {
+                      "key": "sort",
+                      "value": "0",
+                      "description": "0 - created desc, 1 - created asc, 2 - name asc, 3 - name desc"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Find all",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles?page=1&per_page=30&search=&sort=0",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles"
+                      ],
+                      "query": [
+                        {
+                          "key": "page",
+                          "value": "1"
+                        },
+                        {
+                          "key": "per_page",
+                          "value": "30"
+                        },
+                        {
+                          "key": "search",
+                          "value": ""
+                        },
+                        {
+                          "key": "sort",
+                          "value": "0",
+                          "description": "0 - created desc, 1 - created asc, 2 - name asc, 3 - name desc"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "6793"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:12:56 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"current_page\":1,\"per_page\":30,\"total\":15,\"last_page\":1,\"data\":[{\"id\":\"37f783ac-2635-4d53-ab8d-a300c790ecdc\",\"name\":\"Profile 4099\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"37f783ac-2635-4d53-ab8d-a300c790ecdc\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:45:49\",\"updated_at\":\"2025-09-08 14:45:49\",\"tags\":[]},{\"id\":\"6c3c259f-5d42-4f61-8162-acc4110d5746\",\"name\":\"Profile 5768\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"6c3c259f-5d42-4f61-8162-acc4110d5746\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:43:55\",\"updated_at\":\"2025-09-08 14:43:55\",\"tags\":[]},{\"id\":\"791340bc-f0b6-4e13-8548-daacf461c67b\",\"name\":\"Profile 8958\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"791340bc-f0b6-4e13-8548-daacf461c67b\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:41:53\",\"updated_at\":\"2025-09-08 14:41:53\",\"tags\":[]},{\"id\":\"2c782637-9c6e-4701-af89-e33ac102a743\",\"name\":\"Profile 4109\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"2c782637-9c6e-4701-af89-e33ac102a743\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:37:19\",\"updated_at\":\"2025-09-08 14:37:19\",\"tags\":[]},{\"id\":\"89fd3fc8-f52f-46cb-bdc9-835c8929257e\",\"name\":\"Profile 4826\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"89fd3fc8-f52f-46cb-bdc9-835c8929257e\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:35:21\",\"updated_at\":\"2025-09-08 14:35:21\",\"tags\":[]},{\"id\":\"1c96d063-2fa3-4bfb-826b-6429b9b78120\",\"name\":\"gg\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"1c96d063-2fa3-4bfb-826b-6429b9b78120\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:33:58\",\"updated_at\":\"2025-09-08 14:33:58\",\"tags\":[]},{\"id\":\"0c78b866-88f1-42af-80fa-7d6b4d2672f4\",\"name\":\"1111\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"0c78b866-88f1-42af-80fa-7d6b4d2672f4\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:33:03\",\"updated_at\":\"2025-09-08 14:33:03\",\"tags\":[]},{\"id\":\"b4cbb433-7875-400b-8c67-eae5821936b0\",\"name\":\"abc\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"b4cbb433-7875-400b-8c67-eae5821936b0\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:32:35\",\"updated_at\":\"2025-09-08 14:32:35\",\"tags\":[]},{\"id\":\"4adc2e45-4255-44a8-80f6-624f466d02c6\",\"name\":\"Profile 3447\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"4adc2e45-4255-44a8-80f6-624f466d02c6\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:32:18\",\"updated_at\":\"2025-09-08 14:32:18\",\"tags\":[]},{\"id\":\"309e8cec-11eb-41d8-834e-eb93fed456ff\",\"name\":\"Profile 6333\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"309e8cec-11eb-41d8-834e-eb93fed456ff\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 13:52:32\",\"updated_at\":\"2025-09-08 13:52:32\",\"tags\":[]},{\"id\":\"09ced8e0-78a5-4f05-932c-6076e94baa31\",\"name\":\"Profile 5566 Profile 5566Profile 5566Profile 5566Profile 5566Profile 5566Profile 5566Profile 5566Profile 5566Profile 5566\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"09ced8e0-78a5-4f05-932c-6076e94baa31\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 10:53:02\",\"updated_at\":\"2025-09-08 10:53:02\",\"tags\":[]},{\"id\":\"f0326947-711e-4cc1-b56e-4f00b18e0c84\",\"name\":\"Profile 1327\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"f0326947-711e-4cc1-b56e-4f00b18e0c84\",\"raw_proxy\":\"14.244.137.125:24007:1:1\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 10:49:30\",\"updated_at\":\"2025-09-08 10:49:30\",\"tags\":[]},{\"id\":\"2fa6ea24-42df-4227-98ba-241eb95740f3\",\"name\":\"Profile 1825\",\"group_id\":\"4fd6db25-12cc-4ba2-b943-b7583db807fc\",\"storage_path\":\"2fa6ea24-42df-4227-98ba-241eb95740f3\",\"raw_proxy\":\"14.244.137.125:24000:1:1\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 10:11:30\",\"updated_at\":\"2025-09-08 10:30:15\",\"tags\":[{\"id\":\"59c07df3-cfef-4948-a522-0c82537e08cf\",\"name\":\"tag 1\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"0695a64e-b1ca-435a-86f1-703af737480e\",\"name\":\"tag 2\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"aff7f7b5-d404-4aaf-b6c6-e96b0ed549e5\",\"name\":\"tag 3\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"ffbacfe7-d3ec-4287-9889-a1f46dca4c5b\",\"name\":\"tag 4\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"6e804a1c-4534-47b2-84f7-bea898f43986\",\"name\":\"tag 5\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"f95c80a0-fced-4bc4-8caf-801a9178b072\",\"name\":\"tag 6\",\"color\":\"Green\",\"category\":\"profile\"},{\"id\":\"8c18ce35-bfbc-404e-9975-3f8aae40575b\",\"name\":\"tag 7\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"b92bebbd-313d-4693-86f4-00cc014715c1\",\"name\":\"tag 9\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"4cbbee79-eb77-4733-a1f5-e52408510984\",\"name\":\"tag 78\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"39d651ae-6dec-42b4-9952-b5a17b21ead4\",\"name\":\"tag 1000xxxx\",\"color\":\"Yellow\",\"category\":\"profile\"},{\"id\":\"dd8d5525-b48b-4372-a45d-f023e9a57b0f\",\"name\":\"tag xxzzz\",\"color\":\"Green\",\"category\":\"profile\"},{\"id\":\"14c9d77e-ad1f-428c-91d2-cc3e7257b175\",\"name\":\"tag xxxxxxxxxz tag xxxxxxxxxztag xxxxxxxxxztag xxxxxxxxxztag xxxxxxxxxz\",\"color\":\"Gray\",\"category\":\"profile\"}]},{\"id\":\"f4a62402-c3da-4fa3-9d47-276869ee10a9\",\"name\":\"Tiếng Việt 2\",\"group_id\":\"4fd6db25-12cc-4ba2-b943-b7583db807fc\",\"storage_path\":\"f4a62402-c3da-4fa3-9d47-276869ee10a9\",\"raw_proxy\":\"14.244.137.125:24009:1:1\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-04 09:40:28\",\"updated_at\":\"2025-09-08 10:30:15\",\"tags\":[]},{\"id\":\"5a44fac0-8ca7-446c-8455-3d2ca2ab5be3\",\"name\":\"Tên Tiếng Việt\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"5a44fac0-8ca7-446c-8455-3d2ca2ab5be3\",\"raw_proxy\":\"14.244.137.125:24009:1:1\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-04 09:40:22\",\"updated_at\":\"2025-09-04 09:40:22\",\"tags\":[]}]},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Find one",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/37f783ac-2635-4d53-ab8d-a300c790ecdc",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "37f783ac-2635-4d53-ab8d-a300c790ecdc"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Find one",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/37f783ac-2635-4d53-ab8d-a300c790ecdc",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "37f783ac-2635-4d53-ab8d-a300c790ecdc"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "8583"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:13:09 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"37f783ac-2635-4d53-ab8d-a300c790ecdc\",\"name\":\"Profile 4099\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"37f783ac-2635-4d53-ab8d-a300c790ecdc\",\"raw_proxy\":\"\",\"browser\":{\"name\":\"chrome\",\"version\":\"139.0.7258.139\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 14:45:49\",\"updated_at\":\"2025-09-08 14:45:49\",\"tags\":[],\"fingerprint\":{\"taskbar_title\":\"\",\"navigator\":{\"allow_custom_user_agent\":false,\"user_agent\":\"\",\"auto_language\":true,\"language\":null,\"do_not_track\":false,\"hardware_concurrency\":64,\"device_memory\":4,\"js_heap_size_limit\":4294966461},\"browser\":{\"browser_type\":1,\"browser_version\":\"139.0.7258.139\"},\"timezone\":{\"auto_timezone\":true,\"timezone\":null},\"os\":{\"type\":1},\"webrtc\":{\"mode\":1,\"public_ip\":\"\"},\"geolocation\":{\"mode\":2,\"latitude\":0.0,\"longitude\":0.0,\"accuracy\":0.0},\"canvas\":{\"mode\":2,\"noise_global_alpha\":0.0,\"noise_shadow_blur\":0.0,\"noise_shadow_offset_x\":0.0,\"noise_shadow_offset_y\":0.0,\"noise_text_x\":0.0,\"noise_text_y\":0.0},\"client_rect\":{\"mode\":2,\"noise\":0.0},\"webgl_image\":{\"mode\":2,\"uniform1_noise\":0.0,\"uniform2_noise\":0.0,\"uniform3_noise\":0.0,\"uniform4_noise\":0.0},\"webgl_meta_data\":{\"vendor_id\":\"6629\",\"devide_id\":null,\"mode\":1,\"vendor\":\"Google Inc. (ATI Technologies Inc.)\",\"renderer\":\"ANGLE (AMD, AMD Radeon R9 M370X OpenGL Engine, OpenGL 4.1)\",\"gl_canvas\":\"webgl2\",\"antialiasing\":true,\"texture_max_anisotropy_ext\":16,\"shaider_precision_format\":\"highp/highp\",\"extensions\":[\"EXT_clip_control\",\"EXT_color_buffer_float\",\"EXT_color_buffer_half_float\",\"EXT_conservative_depth\",\"EXT_depth_clamp\",\"EXT_disjoint_timer_query_webgl2\",\"EXT_float_blend\",\"EXT_polygon_offset_clamp\",\"EXT_render_snorm\",\"EXT_texture_compression_bptc\",\"EXT_texture_compression_rgtc\",\"EXT_texture_filter_anisotropic\",\"EXT_texture_mirror_clamp_to_edge\",\"EXT_texture_norm16\",\"KHR_parallel_shader_compile\",\"NV_shader_noperspective_interpolation\",\"OES_draw_buffers_indexed\",\"OES_sample_variables\",\"OES_shader_multisample_interpolation\",\"OES_texture_float_linear\",\"OVR_multiview2\",\"WEBGL_blend_func_extended\",\"WEBGL_clip_cull_distance\",\"WEBGL_compressed_texture_s3tc\",\"WEBGL_compressed_texture_s3tc_srgb\",\"WEBGL_debug_renderer_info\",\"WEBGL_debug_shaders\",\"WEBGL_lose_context\",\"WEBGL_multi_draw\",\"WEBGL_polygon_mode\",\"WEBGL_provoking_vertex\",\"WEBGL_stencil_texturing\"],\"WebGL_SHADING_LANGUAGE_VERSION\":\"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)\",\"WebGL_VERSION\":\"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\"WebGL_RENDERER\":\"\",\"WebGL_VENDOR\":\"\",\"WebGL_MAX_FRAGMENT_UNIFORM_VECTORS\":1024,\"WebGL_MAX_3D_TEXTURE_SIZE\":2048,\"WebGL_MAX_ARRAY_TEXTURE_LAYERS\":2048,\"WebGL_MAX_COLOR_ATTACHMENTS\":8,\"WebGL_MAX_COMBINED_TEXTURE_IMAGE_UNITS\":32,\"WebGL_MAX_COMBINED_UNIFORM_BLOCKS\":24,\"WebGL_MAX_CUBE_MAP_TEXTURE_SIZE\":16384,\"WebGL_MAX_DRAW_BUFFERS\":8,\"WebGL_MAX_FRAGMENT_INPUT_COMPONENTS\":120,\"WebGL_MAX_FRAGMENT_UNIFORM_BLOCKS\":12,\"WebGL_MAX_PROGRAM_TEXEL_OFFSET\":7,\"WebGL_MAX_RENDERBUFFER_SIZE\":16384,\"WebGL_MAX_SAMPLES\":16,\"WebGL_MAX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_TEXTURE_LOD_BIAS\":2,\"WebGL_MAX_TEXTURE_SIZE\":16384,\"WebGL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS\":120,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS\":4,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS\":4,\"WebGL_MAX_UNIFORM_BLOCK_SIZE\":65536,\"WebGL_MAX_UNIFORM_BUFFER_BINDINGS\":24,\"WebGL_MAX_VARYING_COMPONENTS\":120,\"WebGL_MAX_VARYING_VECTORS\":30,\"WebGL_MAX_VERTEX_ATTRIBS\":16,\"WebGL_MAX_VERTEX_OUTPUT_COMPONENTS\":120,\"WebGL_MAX_VERTEX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_VERTEX_UNIFORM_BLOCKS\":12,\"WebGL_MAX_VERTEX_UNIFORM_COMPONENTS\":16384,\"WebGL_MAX_VERTEX_UNIFORM_VECTORS\":4096,\"WebGL_MAX_FRAGMENT_UNIFORM_COMPONENTS\":4096,\"WebGL_MIN_PROGRAM_TEXEL_OFFSET\":-8,\"WebGL_UNIFORM_BUFFER_OFFSET_ALIGNMENT\":256,\"WebGL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS\":212992,\"WebGL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS\":200704,\"WebGL_MAX_VIEWPORT_DIMS\":[32767,32767],\"WebGL_ALIASED_LINE_WIDTH_RANGE\":[1,1],\"WebGL_ALIASED_POINT_SIZE_RANGE\":[1,1024],\"WebGL_ALPHA_BITS\":8,\"WebGL_BLUE_BITS\":8,\"WebGL_DEPTH_BITS\":24,\"WebGL_GREEN_BITS\":8,\"WebGL_RED_BITS\":8,\"WebGL_STENCIL_BITS\":8,\"WEBGL_FUNCTION_BEGIN_QUERY\":false,\"WEBGL_FUNCTION_BEGIN_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_BUFFER_BASE\":false,\"WEBGL_FUNCTION_BIND_BUFFER_RANGE\":false,\"WEBGL_FUNCTION_BIND_SAMPLER\":false,\"WEBGL_FUNCTION_BIND_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_BLIT_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFI\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERIV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERUIV\":false,\"WEBGL_FUNCTION_CLIENT_WAIT_SYNC\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_COPY_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_COPY_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_CREATE_QUERY\":false,\"WEBGL_FUNCTION_CREATE_SAMPLER\":false,\"WEBGL_FUNCTION_CREATE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_CREATE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DELETE_QUERY\":false,\"WEBGL_FUNCTION_DELETE_SAMPLER\":false,\"WEBGL_FUNCTION_DELETE_SYNC\":false,\"WEBGL_FUNCTION_DELETE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_DELETE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DRAW_ARRAYS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_BUFFERS\":false,\"WEBGL_FUNCTION_DRAW_ELEMENTS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_RANGE_ELEMENTS\":false,\"WEBGL_FUNCTION_END_QUERY\":false,\"WEBGL_FUNCTION_END_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_FENCE_SYNC\":false,\"WEBGL_FUNCTION_FRAMEBUFFER_TEXTURE_LAYER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_NAME\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_PARAMETER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORMS\":false,\"WEBGL_FUNCTION_GET_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_GET_FRAG_DATA_LOCATION\":false,\"WEBGL_FUNCTION_GET_INDEXED_PARAMETER\":false,\"WEBGL_FUNCTION_GET_INTERNALFORMAT_PARAMETER\":false,\"WEBGL_FUNCTION_GET_QUERY\":false,\"WEBGL_FUNCTION_GET_QUERY_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SAMPLER_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SYNC_PARAMETER\":false,\"WEBGL_FUNCTION_GET_TRANSFORM_FEEDBACK_VARYING\":false,\"WEBGL_FUNCTION_GET_UNIFORM_BLOCK_INDEX\":false,\"WEBGL_FUNCTION_GET_UNIFORM_INDICES\":false,\"WEBGL_FUNCTION_INVALIDATE_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_INVALIDATE_SUB_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_IS_QUERY\":false,\"WEBGL_FUNCTION_IS_SAMPLER\":false,\"WEBGL_FUNCTION_IS_SYNC\":false,\"WEBGL_FUNCTION_IS_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_IS_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_PAUSE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_READ_BUFFER\":false,\"WEBGL_FUNCTION_RENDERBUFFER_STORAGE_MULTISAMPLE\":false,\"WEBGL_FUNCTION_RESUME_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERF\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERI\":false,\"WEBGL_FUNCTION_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE2_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE3_D\":false,\"WEBGL_FUNCTION_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_TRANSFORM_FEEDBACK_VARYINGS\":false,\"WEBGL_FUNCTION_UNIFORM1UI\":false,\"WEBGL_FUNCTION_UNIFORM1UIV\":false,\"WEBGL_FUNCTION_UNIFORM2UI\":false,\"WEBGL_FUNCTION_UNIFORM2UIV\":false,\"WEBGL_FUNCTION_UNIFORM3UI\":false,\"WEBGL_FUNCTION_UNIFORM3UIV\":false,\"WEBGL_FUNCTION_UNIFORM4UI\":false,\"WEBGL_FUNCTION_UNIFORM4UIV\":false,\"WEBGL_FUNCTION_UNIFORM_BLOCK_BINDING\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X3FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X3FV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_DIVISOR\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4I\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4IV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UI\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UIV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_IPOINTER\":false,\"WEBGL_FUNCTION_WAIT_SYNC\":false},\"audio_context\":{\"mode\":1,\"noise\":-2.506655282234166},\"screen\":{\"name\":\"Real\",\"width\":-1,\"height\":-1,\"avail_width\":-1,\"avail_height\":-1},\"media_devices\":{\"is_masked\":true,\"audio_inputs\":1,\"audio_outputs\":3,\"video_inputs\":1},\"font\":{\"mode\":1,\"includes\":[\"Annabelle\",\"Liberation Mono\",\"Univers\",\"RomanC\",\"Tubular\",\"Frank Ruehl Libre\",\"WP MultinationalB Courier\",\"Unicorn\",\"WP Greek Helve\",\"WP ArabicScript Sihafa\",\"AMGDT\",\"OpenSymbol\",\"GreekC\",\"WP MultinationalB Helve\",\"Ariston\",\"WP Arabic Sihafa\",\"Gentium Basic\",\"Fixedsys\",\"WP CyrillicB\",\"WP Hebrew David\",\"AcadEref\",\"Amadeus\",\"WP Greek Century\"],\"excludes\":[]},\"startup_urls\":\"https://google.com\",\"bookmarks\":\"Facebook|https://facebook.com\",\"device_name\":\"LAPTOP-6VZIX9D\",\"mac_address\":\"3E:C9:17:F1:CE:61\",\"load_extensions\":\"\"}},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Create",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"Test profile from api\",\r\n    \"group_id\": null,\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5000\",\r\n    \"browser_type\": 1, // 1 - chrome, 2 - firefox\r\n    \"browser_version\": \"137.0.7151.41\", // existed version\r\n    \"os_type\": 1, // 1 - Windows, 2 - MacOS Intel, 3 - MacOS ARM, 4 - Linux, 5 - Android\r\n    \"custom_user_agent\": null, // null or custom user agent\r\n    \"task_bar_title\": \"abc\",\r\n    \"webrtc_mode\": null, // null = unset (follow default setting), 1 - Base on ip, 2 - Fixed, 3 - Real, 4 - Disable\r\n    \"fixed_webrtc_public_ip\": \"\", // required for webrtc_mode = 2\r\n    \"geolocation_mode\": null, // null = unset (follow default setting), 1 - Allow, 2 - Prompt, 3 - Block\r\n    \"canvas_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real, 3 - Block\r\n    \"client_rect_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"webgl_image_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"webgl_metadata_mode\": null, // null = unset (follow default setting), 1 - Masked, 2 - Real\r\n    \"audio_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"font_mode\": null, // null = unset (follow default setting), 1 - Masked, 2 - Real\r\n    \"timezone_base_on_ip\": true,\r\n    \"timezone\": null, // set when timezone_base_on_ip = false\r\n    \"is_language_base_on_ip\": true,\r\n    \"fixed_language\": null // set when is_language_base_on_ip = false. Eg: vi, en, zh..\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/create",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "create"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Create",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"name\": \"Test profile from api\",\r\n    \"group_id\": null,\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5000\",\r\n    \"browser_type\": 1, // 1 - chrome, 2 - firefox\r\n    \"browser_version\": \"137.0.7151.41\", // existed version\r\n    \"os_type\": 1, // 1 - Windows, 2 - MacOS Intel, 3 - MacOS ARM, 4 - Linux, 5 - Android\r\n    \"custom_user_agent\": null, // null or custom user agent\r\n    \"task_bar_title\": \"abc\",\r\n    \"webrtc_mode\": null, // null = unset (follow default setting), 1 - Base on ip, 2 - Fixed, 3 - Real, 4 - Disable\r\n    \"fixed_webrtc_public_ip\": \"\", // required for webrtc_mode = 2\r\n    \"geolocation_mode\": null, // null = unset (follow default setting), 1 - Allow, 2 - Prompt, 3 - Block\r\n    \"canvas_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real, 3 - Block\r\n    \"client_rect_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"webgl_image_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"webgl_metadata_mode\": null, // null = unset (follow default setting), 1 - Masked, 2 - Real\r\n    \"audio_mode\": null, // null = unset (follow default setting), 1 - Noise, 2 - Real\r\n    \"font_mode\": null, // null = unset (follow default setting), 1 - Masked, 2 - Real\r\n    \"timezone_base_on_ip\": true,\r\n    \"timezone\": null, // set when timezone_base_on_ip = false\r\n    \"is_language_base_on_ip\": true,\r\n    \"fixed_language\": null // set when is_language_base_on_ip = false. Eg: vi, en, zh..\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/create",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "create"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "8595"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:19:25 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"69911f98-ffde-475d-aa91-fbb1c713937c\",\"name\":\"Test profile from api\",\"group_id\":\"67db46f9-df8c-41c5-a18f-631a090a17a1\",\"storage_path\":\"69911f98-ffde-475d-aa91-fbb1c713937c\",\"raw_proxy\":\"socks5://127.0.0.1:5000\",\"browser\":{\"name\":\"chrome\",\"version\":\"137.0.7151.41\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 15:19:25\",\"updated_at\":\"2025-09-08 15:19:25\",\"tags\":[],\"fingerprint\":{\"taskbar_title\":\"abc\",\"navigator\":{\"allow_custom_user_agent\":false,\"user_agent\":\"\",\"auto_language\":true,\"language\":\"\",\"do_not_track\":false,\"hardware_concurrency\":4,\"device_memory\":1,\"js_heap_size_limit\":1073741783},\"browser\":{\"browser_type\":1,\"browser_version\":\"137.0.7151.41\"},\"timezone\":{\"auto_timezone\":true,\"timezone\":\"\"},\"os\":{\"type\":1},\"webrtc\":{\"mode\":1,\"public_ip\":\"\"},\"geolocation\":{\"mode\":2,\"latitude\":0.0,\"longitude\":0.0,\"accuracy\":0.0},\"canvas\":{\"mode\":2,\"noise_global_alpha\":0.0,\"noise_shadow_blur\":0.0,\"noise_shadow_offset_x\":0.0,\"noise_shadow_offset_y\":0.0,\"noise_text_x\":0.0,\"noise_text_y\":0.0},\"client_rect\":{\"mode\":2,\"noise\":0.0},\"webgl_image\":{\"mode\":2,\"uniform1_noise\":0.0,\"uniform2_noise\":0.0,\"uniform3_noise\":0.0,\"uniform4_noise\":0.0},\"webgl_meta_data\":{\"vendor_id\":\"4098\",\"devide_id\":null,\"mode\":1,\"vendor\":\"Google Inc. (AMD)\",\"renderer\":\"ANGLE (AMD, Radeon RX 580 Series (0x000067DF) Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"gl_canvas\":\"webgl2\",\"antialiasing\":true,\"texture_max_anisotropy_ext\":16,\"shaider_precision_format\":\"highp/highp\",\"extensions\":[\"EXT_clip_control\",\"EXT_color_buffer_float\",\"EXT_color_buffer_half_float\",\"EXT_conservative_depth\",\"EXT_depth_clamp\",\"EXT_disjoint_timer_query_webgl2\",\"EXT_float_blend\",\"EXT_polygon_offset_clamp\",\"EXT_render_snorm\",\"EXT_texture_compression_bptc\",\"EXT_texture_compression_rgtc\",\"EXT_texture_filter_anisotropic\",\"EXT_texture_mirror_clamp_to_edge\",\"EXT_texture_norm16\",\"KHR_parallel_shader_compile\",\"NV_shader_noperspective_interpolation\",\"OES_draw_buffers_indexed\",\"OES_sample_variables\",\"OES_shader_multisample_interpolation\",\"OES_texture_float_linear\",\"OVR_multiview2\",\"WEBGL_blend_func_extended\",\"WEBGL_clip_cull_distance\",\"WEBGL_compressed_texture_s3tc\",\"WEBGL_compressed_texture_s3tc_srgb\",\"WEBGL_debug_renderer_info\",\"WEBGL_debug_shaders\",\"WEBGL_lose_context\",\"WEBGL_multi_draw\",\"WEBGL_polygon_mode\",\"WEBGL_provoking_vertex\",\"WEBGL_stencil_texturing\"],\"WebGL_SHADING_LANGUAGE_VERSION\":\"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)\",\"WebGL_VERSION\":\"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\"WebGL_RENDERER\":\"\",\"WebGL_VENDOR\":\"\",\"WebGL_MAX_FRAGMENT_UNIFORM_VECTORS\":1024,\"WebGL_MAX_3D_TEXTURE_SIZE\":2048,\"WebGL_MAX_ARRAY_TEXTURE_LAYERS\":2048,\"WebGL_MAX_COLOR_ATTACHMENTS\":8,\"WebGL_MAX_COMBINED_TEXTURE_IMAGE_UNITS\":32,\"WebGL_MAX_COMBINED_UNIFORM_BLOCKS\":23,\"WebGL_MAX_CUBE_MAP_TEXTURE_SIZE\":16384,\"WebGL_MAX_DRAW_BUFFERS\":8,\"WebGL_MAX_FRAGMENT_INPUT_COMPONENTS\":119,\"WebGL_MAX_FRAGMENT_UNIFORM_BLOCKS\":11,\"WebGL_MAX_PROGRAM_TEXEL_OFFSET\":7,\"WebGL_MAX_RENDERBUFFER_SIZE\":16384,\"WebGL_MAX_SAMPLES\":8,\"WebGL_MAX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_TEXTURE_LOD_BIAS\":2,\"WebGL_MAX_TEXTURE_SIZE\":16384,\"WebGL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS\":120,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS\":4,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS\":4,\"WebGL_MAX_UNIFORM_BLOCK_SIZE\":65536,\"WebGL_MAX_UNIFORM_BUFFER_BINDINGS\":24,\"WebGL_MAX_VARYING_COMPONENTS\":119,\"WebGL_MAX_VARYING_VECTORS\":30,\"WebGL_MAX_VERTEX_ATTRIBS\":16,\"WebGL_MAX_VERTEX_OUTPUT_COMPONENTS\":119,\"WebGL_MAX_VERTEX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_VERTEX_UNIFORM_BLOCKS\":11,\"WebGL_MAX_VERTEX_UNIFORM_COMPONENTS\":16384,\"WebGL_MAX_VERTEX_UNIFORM_VECTORS\":4096,\"WebGL_MAX_FRAGMENT_UNIFORM_COMPONENTS\":4096,\"WebGL_MIN_PROGRAM_TEXEL_OFFSET\":-8,\"WebGL_UNIFORM_BUFFER_OFFSET_ALIGNMENT\":256,\"WebGL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS\":212991,\"WebGL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS\":200703,\"WebGL_MAX_VIEWPORT_DIMS\":[32767,32767],\"WebGL_ALIASED_LINE_WIDTH_RANGE\":[1,1],\"WebGL_ALIASED_POINT_SIZE_RANGE\":[1,1024],\"WebGL_ALPHA_BITS\":8,\"WebGL_BLUE_BITS\":8,\"WebGL_DEPTH_BITS\":24,\"WebGL_GREEN_BITS\":8,\"WebGL_RED_BITS\":8,\"WebGL_STENCIL_BITS\":8,\"WEBGL_FUNCTION_BEGIN_QUERY\":false,\"WEBGL_FUNCTION_BEGIN_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_BUFFER_BASE\":false,\"WEBGL_FUNCTION_BIND_BUFFER_RANGE\":false,\"WEBGL_FUNCTION_BIND_SAMPLER\":false,\"WEBGL_FUNCTION_BIND_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_BLIT_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFI\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERIV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERUIV\":false,\"WEBGL_FUNCTION_CLIENT_WAIT_SYNC\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_COPY_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_COPY_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_CREATE_QUERY\":false,\"WEBGL_FUNCTION_CREATE_SAMPLER\":false,\"WEBGL_FUNCTION_CREATE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_CREATE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DELETE_QUERY\":false,\"WEBGL_FUNCTION_DELETE_SAMPLER\":false,\"WEBGL_FUNCTION_DELETE_SYNC\":false,\"WEBGL_FUNCTION_DELETE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_DELETE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DRAW_ARRAYS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_BUFFERS\":false,\"WEBGL_FUNCTION_DRAW_ELEMENTS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_RANGE_ELEMENTS\":false,\"WEBGL_FUNCTION_END_QUERY\":false,\"WEBGL_FUNCTION_END_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_FENCE_SYNC\":false,\"WEBGL_FUNCTION_FRAMEBUFFER_TEXTURE_LAYER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_NAME\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_PARAMETER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORMS\":false,\"WEBGL_FUNCTION_GET_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_GET_FRAG_DATA_LOCATION\":false,\"WEBGL_FUNCTION_GET_INDEXED_PARAMETER\":false,\"WEBGL_FUNCTION_GET_INTERNALFORMAT_PARAMETER\":false,\"WEBGL_FUNCTION_GET_QUERY\":false,\"WEBGL_FUNCTION_GET_QUERY_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SAMPLER_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SYNC_PARAMETER\":false,\"WEBGL_FUNCTION_GET_TRANSFORM_FEEDBACK_VARYING\":false,\"WEBGL_FUNCTION_GET_UNIFORM_BLOCK_INDEX\":false,\"WEBGL_FUNCTION_GET_UNIFORM_INDICES\":false,\"WEBGL_FUNCTION_INVALIDATE_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_INVALIDATE_SUB_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_IS_QUERY\":false,\"WEBGL_FUNCTION_IS_SAMPLER\":false,\"WEBGL_FUNCTION_IS_SYNC\":false,\"WEBGL_FUNCTION_IS_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_IS_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_PAUSE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_READ_BUFFER\":false,\"WEBGL_FUNCTION_RENDERBUFFER_STORAGE_MULTISAMPLE\":false,\"WEBGL_FUNCTION_RESUME_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERF\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERI\":false,\"WEBGL_FUNCTION_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE2_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE3_D\":false,\"WEBGL_FUNCTION_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_TRANSFORM_FEEDBACK_VARYINGS\":false,\"WEBGL_FUNCTION_UNIFORM1UI\":false,\"WEBGL_FUNCTION_UNIFORM1UIV\":false,\"WEBGL_FUNCTION_UNIFORM2UI\":false,\"WEBGL_FUNCTION_UNIFORM2UIV\":false,\"WEBGL_FUNCTION_UNIFORM3UI\":false,\"WEBGL_FUNCTION_UNIFORM3UIV\":false,\"WEBGL_FUNCTION_UNIFORM4UI\":false,\"WEBGL_FUNCTION_UNIFORM4UIV\":false,\"WEBGL_FUNCTION_UNIFORM_BLOCK_BINDING\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X3FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X3FV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_DIVISOR\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4I\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4IV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UI\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UIV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_IPOINTER\":false,\"WEBGL_FUNCTION_WAIT_SYNC\":false},\"audio_context\":{\"mode\":1,\"noise\":-1.9086727892643096},\"screen\":{\"name\":\"Real\",\"width\":-1,\"height\":-1,\"avail_width\":-1,\"avail_height\":-1},\"media_devices\":{\"is_masked\":true,\"audio_inputs\":2,\"audio_outputs\":1,\"video_inputs\":3},\"font\":{\"mode\":1,\"includes\":[\"Tubular\",\"RomanD\",\"Frank Ruehl Libre Black\",\"WP Greek Century\",\"KacstTitlel\",\"RomanC\",\"Gentium Book Basic\",\"GreekC\",\"Alexandra Script\",\"Algerian\",\"Fixedsys\",\"WP MultinationalA Helve\",\"AMGDT\",\"WP CyrillicB\",\"WP CyrillicA\",\"Osaka\",\"Univers\",\"Teletype\",\"WP Greek Helve\",\"Miriam Libre\",\"AcadEref\",\"Annabelle\",\"WP MultinationalA Courier\",\"RomanS\"],\"excludes\":[]},\"startup_urls\":\"\",\"bookmarks\":\"Facebook|https://facebook.com\",\"device_name\":\"DESKTOP-LD933QA\",\"mac_address\":\"F2:E5:CC:D8:67:D1\",\"load_extensions\":\"\"}},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Update",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "// View create profile api\r\n{\r\n    \"name\": \"Test profile from api - edited\",\r\n    \"group_id\": null,\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\",\r\n    \"browser_type\": 1,\r\n    \"browser_version\": \"137.0.7151.41\",\r\n    \"os_type\": 1,\r\n    \"custom_user_agent\": \"abcdefghi\",\r\n    \"task_bar_title\": \"abc\",\r\n    \"webrtc_mode\": 2,\r\n    \"fixed_webrtc_public_ip\": \"\",\r\n    \"geolocation_mode\": null,\r\n    \"canvas_mode\": 3,\r\n    \"client_rect_mode\": 1,\r\n    \"webgl_image_mode\": 1,\r\n    \"webgl_metadata_mode\": 1,\r\n    \"audio_mode\": null,\r\n    \"font_mode\": null,\r\n    \"timezone_base_on_ip\": true,\r\n    \"timezone\": null,\r\n    \"is_language_base_on_ip\": true,\r\n    \"fixed_language\": null\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/update/69911f98-ffde-475d-aa91-fbb1c713937c",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "update",
+                    "69911f98-ffde-475d-aa91-fbb1c713937c"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Update",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "// View create profile api\r\n{\r\n    \"name\": \"Test profile from api - edited\",\r\n    \"group_id\": null,\r\n    \"raw_proxy\": \"socks5://127.0.0.1:5001\",\r\n    \"browser_type\": 1,\r\n    \"browser_version\": \"137.0.7151.41\",\r\n    \"os_type\": 1,\r\n    \"custom_user_agent\": \"abcdefghi\",\r\n    \"task_bar_title\": \"abc\",\r\n    \"webrtc_mode\": 2,\r\n    \"fixed_webrtc_public_ip\": \"\",\r\n    \"geolocation_mode\": null,\r\n    \"canvas_mode\": 3,\r\n    \"client_rect_mode\": 1,\r\n    \"webgl_image_mode\": 1,\r\n    \"webgl_metadata_mode\": 1,\r\n    \"audio_mode\": null,\r\n    \"font_mode\": null,\r\n    \"timezone_base_on_ip\": true,\r\n    \"timezone\": null,\r\n    \"is_language_base_on_ip\": true,\r\n    \"fixed_language\": null\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/update/69911f98-ffde-475d-aa91-fbb1c713937c",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "update",
+                        "69911f98-ffde-475d-aa91-fbb1c713937c"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "8828"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:20:33 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"id\":\"69911f98-ffde-475d-aa91-fbb1c713937c\",\"name\":\"Test profile from api - edited\",\"group_id\":null,\"storage_path\":\"69911f98-ffde-475d-aa91-fbb1c713937c\",\"raw_proxy\":\"socks5://127.0.0.1:5001\",\"browser\":{\"name\":\"chrome\",\"version\":\"137.0.7151.41\"},\"os\":\"windows\",\"note\":\"\",\"created_at\":\"2025-09-08 15:19:25\",\"updated_at\":\"2025-09-08 15:19:25\",\"tags\":[],\"fingerprint\":{\"taskbar_title\":\"abc\",\"navigator\":{\"allow_custom_user_agent\":true,\"user_agent\":\"abcdefghi\",\"auto_language\":true,\"language\":\"\",\"do_not_track\":false,\"hardware_concurrency\":8,\"device_memory\":4,\"js_heap_size_limit\":4294966756},\"browser\":{\"browser_type\":1,\"browser_version\":\"137.0.7151.41\"},\"timezone\":{\"auto_timezone\":true,\"timezone\":\"\"},\"os\":{\"type\":1},\"webrtc\":{\"mode\":2,\"public_ip\":\"\"},\"geolocation\":{\"mode\":2,\"latitude\":0.0,\"longitude\":0.0,\"accuracy\":0.0},\"canvas\":{\"mode\":3,\"noise_global_alpha\":0.0,\"noise_shadow_blur\":0.0,\"noise_shadow_offset_x\":0.0,\"noise_shadow_offset_y\":0.0,\"noise_text_x\":0.0,\"noise_text_y\":0.0},\"client_rect\":{\"mode\":1,\"noise\":3.73611316705031},\"webgl_image\":{\"mode\":1,\"uniform1_noise\":0.008623699486530578,\"uniform2_noise\":0.06912014443632856,\"uniform3_noise\":0.0686510330948247,\"uniform4_noise\":0.07944231877620962},\"webgl_meta_data\":{\"vendor_id\":\"32902\",\"devide_id\":null,\"mode\":1,\"vendor\":\"Google Inc. (Intel)\",\"renderer\":\"ANGLE (Intel, Intel(R) HD Graphics 520 Direct3D11 vs_5_0 ps_5_0, D3D11)\",\"gl_canvas\":\"webgl2\",\"antialiasing\":true,\"texture_max_anisotropy_ext\":16,\"shaider_precision_format\":\"highp/highp\",\"extensions\":[\"EXT_clip_control\",\"EXT_color_buffer_float\",\"EXT_color_buffer_half_float\",\"EXT_conservative_depth\",\"EXT_depth_clamp\",\"EXT_disjoint_timer_query_webgl2\",\"EXT_float_blend\",\"EXT_polygon_offset_clamp\",\"EXT_render_snorm\",\"EXT_texture_compression_bptc\",\"EXT_texture_compression_rgtc\",\"EXT_texture_filter_anisotropic\",\"EXT_texture_mirror_clamp_to_edge\",\"EXT_texture_norm16\",\"KHR_parallel_shader_compile\",\"NV_shader_noperspective_interpolation\",\"OES_draw_buffers_indexed\",\"OES_sample_variables\",\"OES_shader_multisample_interpolation\",\"OES_texture_float_linear\",\"OVR_multiview2\",\"WEBGL_blend_func_extended\",\"WEBGL_clip_cull_distance\",\"WEBGL_compressed_texture_s3tc\",\"WEBGL_compressed_texture_s3tc_srgb\",\"WEBGL_debug_renderer_info\",\"WEBGL_debug_shaders\",\"WEBGL_lose_context\",\"WEBGL_multi_draw\",\"WEBGL_polygon_mode\",\"WEBGL_provoking_vertex\",\"WEBGL_stencil_texturing\"],\"WebGL_SHADING_LANGUAGE_VERSION\":\"WebGL GLSL ES 3.00 (OpenGL ES GLSL ES 3.0 Chromium)\",\"WebGL_VERSION\":\"WebGL 2.0 (OpenGL ES 3.0 Chromium)\",\"WebGL_RENDERER\":\"\",\"WebGL_VENDOR\":\"\",\"WebGL_MAX_FRAGMENT_UNIFORM_VECTORS\":1024,\"WebGL_MAX_3D_TEXTURE_SIZE\":2048,\"WebGL_MAX_ARRAY_TEXTURE_LAYERS\":2048,\"WebGL_MAX_COLOR_ATTACHMENTS\":8,\"WebGL_MAX_COMBINED_TEXTURE_IMAGE_UNITS\":32,\"WebGL_MAX_COMBINED_UNIFORM_BLOCKS\":24,\"WebGL_MAX_CUBE_MAP_TEXTURE_SIZE\":16384,\"WebGL_MAX_DRAW_BUFFERS\":8,\"WebGL_MAX_FRAGMENT_INPUT_COMPONENTS\":120,\"WebGL_MAX_FRAGMENT_UNIFORM_BLOCKS\":12,\"WebGL_MAX_PROGRAM_TEXEL_OFFSET\":7,\"WebGL_MAX_RENDERBUFFER_SIZE\":16384,\"WebGL_MAX_SAMPLES\":16,\"WebGL_MAX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_TEXTURE_LOD_BIAS\":2,\"WebGL_MAX_TEXTURE_SIZE\":16384,\"WebGL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS\":120,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS\":4,\"WebGL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS\":4,\"WebGL_MAX_UNIFORM_BLOCK_SIZE\":65536,\"WebGL_MAX_UNIFORM_BUFFER_BINDINGS\":24,\"WebGL_MAX_VARYING_COMPONENTS\":120,\"WebGL_MAX_VARYING_VECTORS\":30,\"WebGL_MAX_VERTEX_ATTRIBS\":16,\"WebGL_MAX_VERTEX_OUTPUT_COMPONENTS\":120,\"WebGL_MAX_VERTEX_TEXTURE_IMAGE_UNITS\":16,\"WebGL_MAX_VERTEX_UNIFORM_BLOCKS\":12,\"WebGL_MAX_VERTEX_UNIFORM_COMPONENTS\":16384,\"WebGL_MAX_VERTEX_UNIFORM_VECTORS\":4096,\"WebGL_MAX_FRAGMENT_UNIFORM_COMPONENTS\":4096,\"WebGL_MIN_PROGRAM_TEXEL_OFFSET\":-8,\"WebGL_UNIFORM_BUFFER_OFFSET_ALIGNMENT\":256,\"WebGL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS\":212992,\"WebGL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS\":200704,\"WebGL_MAX_VIEWPORT_DIMS\":[32767,32767],\"WebGL_ALIASED_LINE_WIDTH_RANGE\":[1,1],\"WebGL_ALIASED_POINT_SIZE_RANGE\":[1,1024],\"WebGL_ALPHA_BITS\":8,\"WebGL_BLUE_BITS\":8,\"WebGL_DEPTH_BITS\":24,\"WebGL_GREEN_BITS\":8,\"WebGL_RED_BITS\":8,\"WebGL_STENCIL_BITS\":8,\"WEBGL_FUNCTION_BEGIN_QUERY\":false,\"WEBGL_FUNCTION_BEGIN_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_BUFFER_BASE\":false,\"WEBGL_FUNCTION_BIND_BUFFER_RANGE\":false,\"WEBGL_FUNCTION_BIND_SAMPLER\":false,\"WEBGL_FUNCTION_BIND_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_BIND_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_BLIT_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFI\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERFV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERIV\":false,\"WEBGL_FUNCTION_CLEAR_BUFFERUIV\":false,\"WEBGL_FUNCTION_CLIENT_WAIT_SYNC\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_COMPRESSED_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_COPY_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_COPY_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_CREATE_QUERY\":false,\"WEBGL_FUNCTION_CREATE_SAMPLER\":false,\"WEBGL_FUNCTION_CREATE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_CREATE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DELETE_QUERY\":false,\"WEBGL_FUNCTION_DELETE_SAMPLER\":false,\"WEBGL_FUNCTION_DELETE_SYNC\":false,\"WEBGL_FUNCTION_DELETE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_DELETE_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_DRAW_ARRAYS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_BUFFERS\":false,\"WEBGL_FUNCTION_DRAW_ELEMENTS_INSTANCED\":false,\"WEBGL_FUNCTION_DRAW_RANGE_ELEMENTS\":false,\"WEBGL_FUNCTION_END_QUERY\":false,\"WEBGL_FUNCTION_END_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_FENCE_SYNC\":false,\"WEBGL_FUNCTION_FRAMEBUFFER_TEXTURE_LAYER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_NAME\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORM_BLOCK_PARAMETER\":false,\"WEBGL_FUNCTION_GET_ACTIVE_UNIFORMS\":false,\"WEBGL_FUNCTION_GET_BUFFER_SUB_DATA\":false,\"WEBGL_FUNCTION_GET_FRAG_DATA_LOCATION\":false,\"WEBGL_FUNCTION_GET_INDEXED_PARAMETER\":false,\"WEBGL_FUNCTION_GET_INTERNALFORMAT_PARAMETER\":false,\"WEBGL_FUNCTION_GET_QUERY\":false,\"WEBGL_FUNCTION_GET_QUERY_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SAMPLER_PARAMETER\":false,\"WEBGL_FUNCTION_GET_SYNC_PARAMETER\":false,\"WEBGL_FUNCTION_GET_TRANSFORM_FEEDBACK_VARYING\":false,\"WEBGL_FUNCTION_GET_UNIFORM_BLOCK_INDEX\":false,\"WEBGL_FUNCTION_GET_UNIFORM_INDICES\":false,\"WEBGL_FUNCTION_INVALIDATE_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_INVALIDATE_SUB_FRAMEBUFFER\":false,\"WEBGL_FUNCTION_IS_QUERY\":false,\"WEBGL_FUNCTION_IS_SAMPLER\":false,\"WEBGL_FUNCTION_IS_SYNC\":false,\"WEBGL_FUNCTION_IS_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_IS_VERTEX_ARRAY\":false,\"WEBGL_FUNCTION_PAUSE_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_READ_BUFFER\":false,\"WEBGL_FUNCTION_RENDERBUFFER_STORAGE_MULTISAMPLE\":false,\"WEBGL_FUNCTION_RESUME_TRANSFORM_FEEDBACK\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERF\":false,\"WEBGL_FUNCTION_SAMPLER_PARAMETERI\":false,\"WEBGL_FUNCTION_TEX_IMAGE3_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE2_D\":false,\"WEBGL_FUNCTION_TEX_STORAGE3_D\":false,\"WEBGL_FUNCTION_TEX_SUB_IMAGE3_D\":false,\"WEBGL_FUNCTION_TRANSFORM_FEEDBACK_VARYINGS\":false,\"WEBGL_FUNCTION_UNIFORM1UI\":false,\"WEBGL_FUNCTION_UNIFORM1UIV\":false,\"WEBGL_FUNCTION_UNIFORM2UI\":false,\"WEBGL_FUNCTION_UNIFORM2UIV\":false,\"WEBGL_FUNCTION_UNIFORM3UI\":false,\"WEBGL_FUNCTION_UNIFORM3UIV\":false,\"WEBGL_FUNCTION_UNIFORM4UI\":false,\"WEBGL_FUNCTION_UNIFORM4UIV\":false,\"WEBGL_FUNCTION_UNIFORM_BLOCK_BINDING\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X3FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX2X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX3X4FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X2FV\":false,\"WEBGL_FUNCTION_UNIFORM_MATRIX4X3FV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_DIVISOR\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4I\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4IV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UI\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_I4UIV\":false,\"WEBGL_FUNCTION_VERTEX_ATTRIB_IPOINTER\":false,\"WEBGL_FUNCTION_WAIT_SYNC\":false},\"audio_context\":{\"mode\":1,\"noise\":-1.9006727892643096},\"screen\":{\"name\":\"Real\",\"width\":-1,\"height\":-1,\"avail_width\":-1,\"avail_height\":-1},\"media_devices\":{\"is_masked\":true,\"audio_inputs\":2,\"audio_outputs\":2,\"video_inputs\":2},\"font\":{\"mode\":1,\"includes\":[\"Tubular\",\"RomanD\",\"Frank Ruehl Libre Black\",\"WP Greek Century\",\"KacstTitlel\",\"RomanC\",\"Gentium Book Basic\",\"GreekC\",\"Alexandra Script\",\"Algerian\",\"Fixedsys\",\"WP MultinationalA Helve\",\"AMGDT\",\"WP CyrillicB\",\"WP CyrillicA\",\"Osaka\",\"Univers\",\"Teletype\",\"WP Greek Helve\",\"Miriam Libre\",\"AcadEref\",\"Annabelle\",\"WP MultinationalA Courier\",\"RomanS\",\"Ariston\",\"GreekS\",\"WP Hebrew David\",\"Frank Ruehl Libre Light\",\"AmdtSymbols\",\"David Libre\",\"WP ArabicScript Sihafa\",\"KacstNaskh\",\"Scriptina\",\"Inconsolata\",\"Liberation Mono\",\"Oswald\",\"KacstLetter\",\"Symusic\"],\"excludes\":[]},\"startup_urls\":\"\",\"bookmarks\":\"\",\"device_name\":\"LAPTOP-MZBXUM3\",\"mac_address\":\"5E:65:C2:BF:A8:58\",\"load_extensions\":\"\"}},\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Delete",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/delete/69911f98-ffde-475d-aa91-fbb1c713937c?mode=hard",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "delete",
+                    "69911f98-ffde-475d-aa91-fbb1c713937c"
+                  ],
+                  "query": [
+                    {
+                      "key": "mode",
+                      "value": "hard",
+                      "description": "soft (can restore) or hard (cannot restore, delete storage)"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "Delete",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/delete/69911f98-ffde-475d-aa91-fbb1c713937c?mode=hard",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "delete",
+                        "69911f98-ffde-475d-aa91-fbb1c713937c"
+                      ],
+                      "query": [
+                        {
+                          "key": "mode",
+                          "value": "hard",
+                          "description": "soft (can restore) or hard (cannot restore, delete storage)"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "74"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:21:16 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":null,\"message\":\"\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "StartBrowser",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/start/7798d4ca-a002-4a52-9223-5140c68667bc?remote_debugging_port=40444&window_scale=0.8&window_pos=100,100&window_size=800,600&addition_args=",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "start",
+                    "7798d4ca-a002-4a52-9223-5140c68667bc"
+                  ],
+                  "query": [
+                    {
+                      "key": "remote_debugging_port",
+                      "value": "40444"
+                    },
+                    {
+                      "key": "window_scale",
+                      "value": "0.8"
+                    },
+                    {
+                      "key": "window_pos",
+                      "value": "100,100"
+                    },
+                    {
+                      "key": "window_size",
+                      "value": "800,600"
+                    },
+                    {
+                      "key": "addition_args",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "StartBrowser",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/start/7798d4ca-a002-4a52-9223-5140c68667bc?remote_debugging_port=40444&window_scale=0.8&window_pos=100,100&window_size=800,600&addition_args=",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "start",
+                        "7798d4ca-a002-4a52-9223-5140c68667bc"
+                      ],
+                      "query": [
+                        {
+                          "key": "remote_debugging_port",
+                          "value": "40444"
+                        },
+                        {
+                          "key": "window_scale",
+                          "value": "0.8"
+                        },
+                        {
+                          "key": "window_pos",
+                          "value": "100,100"
+                        },
+                        {
+                          "key": "window_size",
+                          "value": "800,600"
+                        },
+                        {
+                          "key": "addition_args",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "354"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 12 Feb 2026 04:13:17 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":{\"profile_id\":\"7798d4ca-a002-4a52-9223-5140c68667bc\",\"driver_path\":\"C:\\\\Users\\\\buidu\\\\AppData\\\\Roaming\\\\GPMLoginGlobal\\\\Browsers\\\\ChromiumCore_v142\\\\gpmdriver.exe\",\"remote_debugging_port\":40444,\"addition_info\":{\"process_id\":35632,\"profile_name\":\"Profile 7221\",\"window_handle\":0}},\"message\":\"\",\"sender\":\"GPMLoginGlobal v0.1.7-beta\"}"
+                }
+              ]
+            },
+            {
+              "name": "StopBrowser",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/profiles/stop/37f783ac-2635-4d53-ab8d-a300c790ecdc",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "profiles",
+                    "stop",
+                    "37f783ac-2635-4d53-ab8d-a300c790ecdc"
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "name": "StopBrowser",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/profiles/stop/37f783ac-2635-4d53-ab8d-a300c790ecdc",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "profiles",
+                        "stop",
+                        "37f783ac-2635-4d53-ab8d-a300c790ecdc"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "76"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:22:40 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":null,\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Extensions",
+          "item": [
+            {
+              "name": "Get All Extensions",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/extensions",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "extensions"
+                  ]
+                },
+                "description": "Get all installed extensions"
+              },
+              "response": [
+                {
+                  "name": "Get All Extensions",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/extensions",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "extensions"
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "187"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:06:39 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":[{\"id\":\"9d30b2b55768f1051833465850725851\",\"name\":\"Convert WebP to PNG / JPG\",\"version\":\"3.0.11\",\"is_active\":false}],\"message\":\"OK\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            },
+            {
+              "name": "Set extension state",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{Local URL}}/api/v1/extensions/update-state/9d30b2b55768f1051833465850725851?active=false",
+                  "host": [
+                    "{{Local URL}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "extensions",
+                    "update-state",
+                    "9d30b2b55768f1051833465850725851"
+                  ],
+                  "query": [
+                    {
+                      "key": "active",
+                      "value": "false"
+                    }
+                  ]
+                },
+                "description": "Active or Deactive a extension"
+              },
+              "response": [
+                {
+                  "name": "Set extension state",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{Local URL}}/api/v1/extensions/update-state/9d30b2b55768f1051833465850725851?active=false",
+                      "host": [
+                        "{{Local URL}}"
+                      ],
+                      "path": [
+                        "api",
+                        "v1",
+                        "extensions",
+                        "update-state",
+                        "9d30b2b55768f1051833465850725851"
+                      ],
+                      "query": [
+                        {
+                          "key": "active",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": null,
+                  "header": [
+                    {
+                      "key": "Content-Length",
+                      "value": "110"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Microsoft-HTTPAPI/2.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 08 Sep 2025 15:07:38 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\"success\":true,\"data\":null,\"message\":\"Extension state updated successfully\",\"sender\":\"GPMLoginGlobal v1.0.0\"}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "Version 1"
+    }
+  ]
+}
