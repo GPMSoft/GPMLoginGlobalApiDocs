@@ -1,0 +1,12 @@
+{
+  "name": "gpm-login-global-sample",
+  "version": "1.0.0",
+  "description": "Usage examples for the GPMLogin Global JavaScript client library",
+  "type": "module",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "dependencies": {
+    "gpm-login-global": "file:../../libraries/Js"
+  }
+}

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>GPMLoginGlobal</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>GPMLogin</Authors>
+    <Description>Official C# client library for GPMLogin Global Local API</Description>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+</Project>

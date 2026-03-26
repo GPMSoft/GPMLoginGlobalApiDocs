@@ -1,0 +1,25 @@
+{
+  "name": "gpm-login-global",
+  "version": "1.0.0",
+  "description": "Official JavaScript client library for the GPMLogin Global Local API",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "src/"
+  ],
+  "keywords": [
+    "gpmlogin",
+    "antidetect",
+    "browser",
+    "automation"
+  ],
+  "author": "GPMLogin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

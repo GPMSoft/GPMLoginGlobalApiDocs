@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference the local library project during development.
+         Replace with a NuGet package reference once published:
+         <PackageReference Include="GPMLoginGlobal" Version="1.0.0" /> -->
+    <ProjectReference Include="..\..\libraries\CSharp\GPMLoginGlobal.csproj" />
+  </ItemGroup>
+</Project>
