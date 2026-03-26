@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Official C# client library for GPMLogin Global Local API")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ddeda22e4a7ca3324c1e73eff0635ece94774db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c96d21417e758e89fa333bba62e89680328e37b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPMLoginGlobal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPMLoginGlobal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
